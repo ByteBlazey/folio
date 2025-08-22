@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  
+  <!-- =========================
+       Navigation Section
+  ========================== -->
+  <nav>
+    <!-- Sidebar Navigation (hidden on desktop) -->
+    <ul class="sidebar">
+      <div onclick="hidesidebar()">
+        <a href="" class="close-icon">
+          <!-- Close Icon SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+          </svg>
+        </a>
+      </div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="">Skills</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="https://discordapp.com/users/1395412536031182898">Contact</a></li>
+      <li><a href="https://discordapp.com/users/1395412536031182898">Hire Me</a></li>
+    </ul>
+    <!-- Main Navigation Bar -->
+    <div class="nav-container">
+      <ul class="nav-left">
+        <li><a href="index.html"><img src="nl.png" alt="Port-Folio"></a></li>
+      </ul>
+      <ul class="nav-center">
+        <li class="hide"><a href="">Skills</a></li>
+        <li class="hide"><a href="">Projects</a></li>
+        <li class="hide"><a href="https://discordapp.com/users/1395412536031182898">Contact</a></li>
+        <li class="hide"><a href="index.html">Home</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li class="hide"><a href="">Hire Me</a></li>
+        <!-- Sidebar menu button (visible on mobile) -->
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#">
+            <!-- Hamburger Icon SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- =========================
+       Hero Section
+  ========================== -->
+  <div class="important">
+    <!-- Profile Image -->
+    <div class="profile">
+      <img src="copy.jpeg" alt="Profile Image">
+    </div>
+    <!-- Title Text -->
+    <div class="tet">
+      <p class="fir">Front-End</p>
+      <p class="sec">Developer</p>
+    </div>
+    <!-- Typing Animation Text -->
+    <div class="typing">
+      <p>Crafting beautiful, responsive web experiences</p>
+    </div>
+    <!-- Short Bio -->
+    <div class="tet2">
+      <p>
+        Passionate about creating intuitive user interfaces with modern technologies. Specialized in HTML, CSS, Tailwind CSS, and JavaScript with a focus on performance and accessibility.
+      </p>
+    </div>
+    <!-- Contact Button -->
+    <a href="" class="get">Get In Touch</a>
+    <!-- Social Icons -->
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/byte-blaze"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="mailto:byteblazey@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+      <a href="https://discordapp.com/users/1395412536031182898"><i class="fa-brands fa-discord fa-2x"></i></a>
+    </div>
+  </div>
+
+  <!-- =========================
+       Skills Section
+  ========================== -->
+  <section class="abt">
+    <p class="th">Technical Skills</p>
+    <p class="thbt">
+      My expertise spans across modern front-end technologies, with a strong focus on creating performant and accessible web applications.
+    </p>
+    <div class="progress-container">
+      <div class="skills-grid">
+        <!-- HTML Skill Bar -->
+        <div class="progress">
+          <div class="show">
+            <img src="html-lg.png" alt="HTML" />
+            <div class="html-txt">
+              <p>HTML</p>
+              <p>Proficiency</p>
+            </div>
+          </div>
+          <div class="cent"><p>100%</p></div>
+          <div class="bar"><div class="html-bar"></div></div>
+        </div>
+        <!-- CSS Skill Bar -->
+        <div class="progress">
+          <div class="show">
+            <img src="css-lg.png" alt="CSS" />
+            <div class="html-txt">
+              <p>CSS</p>
+              <p>Proficiency</p>
+            </div>
+          </div>
+          <div class="cent"><p>100%</p></div>
+          <div class="bar"><div class="css-bar"></div></div>
+        </div>
+        <!-- JavaScript Skill Bar -->
+        <div class="progress">
+          <div class="show">
+            <img src="js-lg.png" alt="JavaScript" />
+            <div class="html-txt">
+              <p>JavaScript</p>
+              <p>Proficiency</p>
+            </div>
+          </div>
+          <div class="cent"><p>60%</p></div>
+          <div class="bar"><div class="js-bar"></div></div>
+        </div>
+        <!-- Tailwind CSS Skill Bar -->
+        <div class="progress">
+          <div class="show">
+            <img src="tail-lg.png" alt="Tailwind CSS" />
+            <div class="html-txt">
+              <p>Tailwind CSS</p>
+              <p>Proficiency</p>
+            </div>
+          </div>
+          <div class="cent"><p>95%</p></div>
+          <div class="bar"><div class="tw-bar"></div></div>
+        </div>
+      </div>
+    </div>
+    <!-- Additional Technologies -->
+    <p class="ad-th">Additional Technologies</p>
+    <div class="btns">
+      <button>React</button>
+      <button>Responsive Design</button>
+      <button>Performance Optimization</button>    
+      <button>Accessibility</button>
+      <button>Git</button> 
+    </div>  
+  </section>
+
+  <!-- =========================
+       JavaScript Section
+  ========================== -->
+  <script>
+    // Sidebar show/hide functions
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      if (sidebar) {
+        sidebar.style.display = 'flex';
+      }
+    }
+    function hidesidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      if (sidebar) {
+        sidebar.style.display = 'none';
+      }
+    }
+
+    // Sidebar event listeners
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuBtn = document.querySelector('.menu-button a');
+      if (menuBtn) {
+        menuBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          showSidebar();
+        });
+      }
+      const closeLink = document.querySelector('.sidebar .close-icon');
+      if (closeLink) {
+        closeLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          hidesidebar();
+        });
+      }
+    });
+
+    // Progress bar animation on scroll (Intersection Observer)
+    document.addEventListener('DOMContentLoaded', function() {
+      const bars = document.querySelectorAll('.bar > div');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-bar');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      bars.forEach(bar => observer.observe(bar));
+    });
+  </script>
+</body>
+</html>
